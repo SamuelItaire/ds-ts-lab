@@ -1,23 +1,5 @@
+import {Friend, Colleague, ColleagueHistory } from './myTypes'
 
-interface Friend {
-    name: string;
-    phone: string;
-    age: number;
-}
-
-interface Colleague {
-  name: string;
-  department: string;
-  contact: {
-    email: string;
-    extension: number;
-  };
-}
-
-interface ColleagueHistory {
-  current: Colleague[],
-  former: Colleague[]
-}
 
 const friend1: Friend = {
   name: "Leon Ogunfeyimi",
@@ -31,8 +13,8 @@ const friend2: Friend = {
   age: 31,
 };
 
-const friends: Friend[] = [friend1, friend2];
-console.log(friends[1]);
+export const friends = [friend1, friend2];
+//console.log(friends[1]);
 
 //   -------------------
 
@@ -70,6 +52,4 @@ export const colleagues : ColleagueHistory = {
 };
 
 
-
-
-console.log(colleagues.current[0]);
+//console.log(colleagues.current[0]);

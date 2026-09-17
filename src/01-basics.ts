@@ -2,35 +2,41 @@
 interface Friend {
     name: string;
     phone: string;
-    age: number
+    age: number;
 }
-
-
-const friend1 = {
-  name: "Leon Ogunfeyimi",
-  phone: "087-12345",
-  age: 25,
-};
-
-const friend2 = {
-  name: "Elijah Destigni",
-  phone: "086--12345",
-  age: 31,
-};
-
-const friends = [friend1, friend2];
-console.log(friends[1]);
-
-//   -------------------
 
 interface Colleague {
   name: string;
   department: string;
   contact: {
     email: string;
-    extension: number
+    extension: number;
   };
 }
+
+interface ColleagueHistory {
+  current: Colleague[],
+  former: Colleague[]
+}
+
+const friend1: Friend = {
+  name: "Leon Ogunfeyimi",
+  phone: "087-12345",
+  age: 25,
+};
+
+const friend2: Friend = {
+  name: "Elijah Destigni",
+  phone: "086--12345",
+  age: 31,
+};
+
+const friends: Friend[] = [friend1, friend2];
+console.log(friends[1]);
+
+//   -------------------
+
+
 
 const colleague1 = {
   name: "Robbie Grogan",
@@ -62,10 +68,7 @@ export const colleagues : ColleagueHistory = {
   current: [colleague1, colleague2, colleague3],
   former: [],
 };
-interface ColleagueHistory {
-  current: Colleague[],
-  former: Colleague[]
-}
+
 
 
 

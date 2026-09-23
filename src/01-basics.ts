@@ -27,7 +27,7 @@ const colleague1 = {
   name: "Robbie Grogan",
   department: "Engineering",
   contact: {
-    email: "rgraham@company.com",
+    email: "robbie@company.com",
     extension: 121,
   },
 };
@@ -36,7 +36,7 @@ const colleague2 = {
   name: "Devin Scholtz",
   department: "Finance",
   contact: {
-    email: "pburke@company.com",
+    email: "devin@company.com",
     extension: 132,
   },
 };
@@ -45,7 +45,7 @@ const colleague3 = {
   name: "Eugene Cocieru",
   department: "HR",
   contact: {
-    email: "dos@company.com",
+    email: "eugene@company.com",
     extension: 125,
   },
 };
